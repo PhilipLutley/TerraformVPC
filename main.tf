@@ -6,6 +6,10 @@
 # 5. Public Route table & Route table association of public subnet to igw
 # 6. Private Route table & Route table association of private subnet to ngw
 
+terraform {
+  required_version = "0.11.13"
+}
+
 provider "aws" {
   region = "eu-west-2"
 }
